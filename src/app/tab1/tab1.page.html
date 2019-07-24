@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar color="secondary">
+      <div class="gallery-button">  
+          <a routerLink="/upload"> <ion-icon ios="ios-camera" md="md-camera" class="icon"></ion-icon></a>
+        </div>
     <ion-title class="Title">
       Teen Fit
     </ion-title>
@@ -7,18 +10,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="secondary"> 
-<img src="../../assets/teen.jpg" class="Guy">
-<p class="p">
-  Welcome back Anthony!
+<ion-content color="secondary" class="content"> 
+<img src="../../assets/teen.jpg" class="pp">
+<p class="guy">
+Elmers_Glue
 </p>
-<img src="../../assets/images.jpeg" class="Bot">
-<img src="../../assets/images-2.jpeg" class="boi">
-<img src="../../assets/teenager-425x239.jpg" class="Boy">
-<div class="gallery-button" text-center>
-    <img [src]="imageSrc" />    
-  <ion-icon name="images" on-tap="openGallery()"></ion-icon>
-  <p>Choose a Photo</p>  
-  <a routerLink="/upload">upload</a>
-</div>
 </ion-content>
