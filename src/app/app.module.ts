@@ -12,6 +12,8 @@ import { HttpModule } from '@angular/http';
 import { Camera } from '@ionic-native/camera/ngx';
 import { File } from '@ionic-native/file/ngx';
 import { AwsService } from './aws.service';
+import { FileTransfer, FileUploadOptions, FileTransferObject} from '@ionic-native/file-transfer/ngx';
+import { VideoPlayer } from '@ionic-native/video-player';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { AwsService } from './aws.service';
     StatusBar,
     SplashScreen,
     Camera,
+    FileTransfer,
+    FileTransferObject,
     File,
     AwsService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

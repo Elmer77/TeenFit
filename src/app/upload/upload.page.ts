@@ -57,11 +57,10 @@ export class UploadPage {
   takePicture(sourceType) {
     // Create options for the Camera Dialog
     const options: CameraOptions = {
-      quality: 100,
+      quality: 50,
       correctOrientation: true,
       destinationType: this.camera.DestinationType.FILE_URI,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE,
+      mediaType: this.camera.MediaType.VIDEO,
       sourceType: sourceType
     }
 
@@ -76,7 +75,7 @@ export class UploadPage {
 
         // Convert the File to an ArrayBuffer for upload
         this.file.readAsArrayBuffer(this.file.tempDirectory, oneFile.name).then(realFile => {
-          let type = 'jpg';
+          let type = 'mov';
           let newName = this.awsProvider.randomString(6) + new Date().getTime() + '.' + type;
 
           // Get the URL for our PUT request

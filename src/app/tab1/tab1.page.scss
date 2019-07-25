@@ -4,9 +4,6 @@
   font-family: Roboto;
   font-size: 25px;
 }
-.content {
-  top: 133px;
-}
 .pp {
   display: block;
   margin-left: auto;
@@ -14,12 +11,8 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-top: 150px;
 } 
-.icon {
-  height: 50px;
-  width: 50px;
-  color: white;
-}
 .guy {
   font-size: 25px;
   text-align: center;
@@ -30,5 +23,13 @@
   margin-right: auto;
   border-radius: 45px;
   color: #258DD8;
+  
+}
+.icon {
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 30px;
+  align-items: center;
   
 }

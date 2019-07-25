@@ -9,7 +9,7 @@
             <ion-back-button></ion-back-button>
           </ion-buttons>
       <ion-title class="title">
-        Libary
+        Libary/feed
       </ion-title>
     </ion-toolbar>
   </ion-header>
@@ -19,7 +19,9 @@
    
     <ion-list>
       <ion-card *ngFor="let img of images; let i = index">
-        <img [src]="img.url">
+        <video width="320" height="240" controls >
+            <source [src]="img.url">
+        </video>
         <button ion-button full color="danger" [style.margin]="0" *ngIf="edit" (click)="deleteImage(i)">
                 <ion-icon name="trash"></ion-icon>
               </button>
@@ -27,5 +29,3 @@
     </ion-list>
    
   </ion-content>
-
-  
