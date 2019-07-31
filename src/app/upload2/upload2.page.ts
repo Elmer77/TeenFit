@@ -3,51 +3,15 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import { Component } from '@angular/core';
 import { NavController, ActionSheetController, ToastController, LoadingController } from '@ionic/angular';
 import { AwsService } from '../aws.service';
-import{ Tab1Page } from '../tab1/tab1.page'
+
 @Component({
-  selector: 'app-upload',
-  templateUrl: './upload.page.html',
-  styleUrls: ['./upload.page.scss'],
+  selector: 'app-upload2',
+  templateUrl: './upload2.page.html',
+  styleUrls: ['./upload2.page.scss'],
 })
-export class UploadPage {
+export class Upload2Page {
+
   images = [];
-  public users = [
-    {
-      picture: '../../assets/profile1.jpg',
-      points: '100',
-      challenge: 'Push Ups',
-      name: 'Tyler Adams',
-      count: '1'
-    },
-    {
-      picture: '../../assets/profile1.jpg',
-      points: '100',
-      challenge: 'Push Ups',
-      name: 'Gabriel Condez',
-      count: '2'
-    },
-    {
-      picture: '../../assets/profile1.jpg',
-      points: '100',
-      challenge: 'Push Ups',
-      name: 'Elmer Vasquez',
-      count: '3'
-    },
-    {
-      picture: '../../assets/profile1.jpg',
-      points: '100',
-      challenge: 'Push Ups',
-      name: 'Gio Lopez',
-      count: '4'
-    },
-    {
-      picture: '../../assets/profile1.jpg',
-      points: '100',
-      challenge: 'Push Ups',
-      name: 'Alex Hanson',
-      count: '5'
-    }
-  ]
 
   constructor(public navCtrl: NavController, private loadingCtrl: LoadingController, private toastCtrl: ToastController, private awsProvider: AwsService, private actionSheetCtrl: ActionSheetController, private file: File, private camera: Camera) { }
 
@@ -149,6 +113,5 @@ export class UploadPage {
       toast.present();
     })
   }
-
 
 }

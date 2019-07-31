@@ -8,6 +8,32 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab1Page {
   private imageSrc: string;
+  public workouts = [
+    {
+      background: 'assets/pushupsguy.jpg',
+      points: '100',
+      challenge: 'Push Ups',
+      name: 'Tyler Adams',
+      num: '5',
+      routerLink: '/upload'
+    },
+    {
+      background: 'assets/pullups.png',
+      points: '100',
+      challenge: 'Pull Ups',
+      name: 'Elmer Vasquez',
+      num: '4',
+      routerLink: '/upload2'
+    },
+    {
+      background: 'assets/situps.jpg',
+      points: '100',
+      challenge: 'Sit Ups',
+      name: 'Roberto Sanchez',
+      num: '6',
+      routerLink: '/upload3'
+    }
+  ]
 
   constructor(private navCtrl: NavController) {}
 

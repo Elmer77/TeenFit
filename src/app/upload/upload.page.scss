@@ -5,8 +5,109 @@
 .title {
   font-size: 25px;
 }
-.camera {
-  top: 40px;
-  height: 27px;
-  width: 27px;
+.header{
+  background-color: #6bc1ff;
+  height: 260px;
+  margin-top: -16px;
+  position: fixed;
+  width: 100%;
+  margin-left: -16px;
+  z-index: 100;
+}
+.profilePic{
+  display: block;
+  margin: auto;
+  margin-top: 10px; 
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+.num{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-top: -5px;
+}
+.space{
+  height: 250px;
+}
+.profilePicBox{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+  border: solid white 3px;
+  border-radius: 50%;
+}
+.challengeName{
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.challengeDes{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.line{
+  margin-top: 13px;
+  border-bottom: solid white 1px;
+}
+.challengeAmount{
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.add {
+  color: white;
+  height: 35px;
+  width: 35px;
+  margin-left: 280px;
+}
+.vid{
+  background-color: #6bc1ff;
+  border: solid 1px #6bc1ff;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.pic{
+  height: 70px;
+  width: 70px;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10px;
+}
+.profile{
+  position: absolute;
+}
+.des{
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -30px;
+}
+.picBox{
+  display: inline-block;
+}
+.name{
+  margin-top: 20px;
+  color: #6bc1ff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.points{
+  color: #6bc1ff;
+}
+ion-col{
+  border-bottom: solid 1px #c4c4c4;
+  padding-bottom: 20px;
+}
+ion-back-button{
+  margin-left: 20px;
 }

@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+          </ion-buttons> 
+      <ion-title class="title">
+        Photos and Videos
+      </ion-title>
+      <button class="button" ion-fab (click)="presentActionSheet()" >
+          <ion-icon color="dark" name="camera" ios="ios-camera" md="md-camera" class="camera"></ion-icon>
+        </button>
+    </ion-toolbar>
+  </ion-header>
+   
+  <ion-content padding class="content">
+    <h3 [hidden]="images.length !== 0" text-center></h3>
+   
+    <ion-list>
+      <ion-card *ngFor="let img of images; let i = index">
+        <video width="320" height="240" controls >
+            <source [src]="img.url">
+        </video>
+        <button ion-button full color="danger" [style.margin]="0" *ngIf="edit" (click)="deleteImage(i)">
+                <ion-icon name="trash"></ion-icon>
+              </button>
+      </ion-card>
+    </ion-list>
+   
+  </ion-content>

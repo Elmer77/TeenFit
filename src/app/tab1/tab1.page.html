@@ -1,22 +1,50 @@
-<ion-header>
-  <ion-toolbar color="secondary">
-      <div class="gallery-button">  
-          <a routerLink="/upload"> <ion-icon ios="ios-camera" md="md-camera" class="icon"></ion-icon></a>
+<ion-content>
+  <div class="profile">
+    <img class="pic" align="middle" src="../../assets/background.png" alt="">
+    <div class="name">Anthony Morales</div>
+    <div class="container">
+      <div class="section">
+        <div class="number">2300</div>
+        <div class="des">Fit Points</div>
+      </div>
+      <div class="section">
+        <div class="number">12</div>
+        <div class="des">Fit Friends</div>
+      </div>
+      <div class="section">
+        <div class="des">
+          <ion-icon class="friends" name="person-add"></ion-icon>
+          <ion-badge color="danger">3</ion-badge>
         </div>
-    <ion-title class="Title">
-      Teen Fit
-    </ion-title>
-    
-  </ion-toolbar>
-</ion-header>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <div class="workout" *ngFor="let workout of workouts" routerLink="{{workout.routerLink}}">
+    <div class="top">
+      <img [src]="workout.background" alt="">
+    </div>
+    <div class="middle"></div>
+    <div class="bottom">
+      <div class="points">
+        {{workout.points}} pts
+      </div>
+      <div class="profileBox">
+        <div class="profilePicBox">
+            <ion-icon class="profilePic" name="people"></ion-icon>
+            <div class="num">
+              {{workout.num}}
+            </div>
+        </div>
+        <div class="words">
+          <div class="challenge">
+            {{workout.challenge}} Challenge
+          </div>
+          <div class="profileName">
+          </div>
+        </div>
+      </div>
+    </div>
 
-<ion-content color="secondary" class="content"> 
-<img src="../../assets/teen.jpg" class="pp">
-<p class="guy">
-Elmers_Glue
-</p>
-<ion-icon name="trophy" class="icon"></ion-icon>
-<p class="icon">
-  Fit Score
-</p>
+  </div>
 </ion-content>

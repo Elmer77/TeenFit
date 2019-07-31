@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Observable';
 export class AwsService {
   name: any;
   type: any;
-  apiUrl = 'http://127.0.0.1:5000/';
+  apiUrl = 'https://teenfit.herokuapp.com/';
  
   constructor(public http: Http) { }
  
